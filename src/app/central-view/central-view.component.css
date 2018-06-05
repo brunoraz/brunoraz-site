@@ -1,0 +1,32 @@
+.centralview {
+    font-family: Roboto,"Helvetica Neue",sans-serif;
+    font-size: 14px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.centralview:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/* Left column */
+.centralview .leftcolumn { 
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+.centralview .rightcolumn {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+  }
+
+  @media screen and (max-width: 800px) {
+    .centralview .leftcolumn, .centralview .rightcolumn { 
+      width: 100%;
+      padding: 0;
+    }
+  }
